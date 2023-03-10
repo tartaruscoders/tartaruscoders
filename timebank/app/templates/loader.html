@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="rithika">
+        <div class="ellipse"></div>
+        <div class="dot"></div>
+    </div>
+    <a id="text" href="" target="_blank">
+        <div class="hover">
+            <div>Loading..</div>
+            <div>TimeBank</div>
+        </div>
+        <div class="website">Hope You Enjoy</div>
+        <div class="rithika">Rithika</div>
+        <div class="hettiarachchi">Hettiarachchi</div></a>
+
+        <script>
+            setTimeout(function(){
+                 window.location.href = "{% url 'home' %}";
+              }, 3000);
+        </script>
+
+{% endblock content %}
